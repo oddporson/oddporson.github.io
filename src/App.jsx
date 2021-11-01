@@ -1,5 +1,3 @@
-// import './App.css';
-
 // Components
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
@@ -14,7 +12,6 @@ import "./app.scss";
 function App() {
   return (
     <div className="app">
-      hello <strong>world.</strong>
       <Topbar />
       <div className="sections">
         <Intro />
