@@ -3,9 +3,17 @@
 .topbar {
   width: 100%;
   height: 70px;
-  background-color:$mainColor;
+  background-color: white;
+  color: $mainColor !important;
   position: fixed;
   top: 0;
   color: white; // font color
   z-index: 2;
+
+  .wrapper {
+    padding: 10px 30px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+  }
 }
