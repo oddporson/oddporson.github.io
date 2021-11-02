@@ -8,6 +8,10 @@
     position: relative; // make the components relative to fill out the empty white space at the bottom
     top: 70px; // starts at 70 px after the nav bar
     scroll-snap-type: y mandatory;
+    scrollbar-width: none; // for firefox
+    &::-webkit-scrollbar{
+      display: none;
+    }
 
     > *{ // >* means for each element inside the components
       width: 100vw;
