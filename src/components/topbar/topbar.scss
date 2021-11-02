@@ -19,13 +19,19 @@
     .left {
       display: flex;
       align-items: center;
-      
+
       .logo{
         font-size: 40px;
         font-weight: 700;
         text-decoration: none;
         color: inherit; // removes purple color visited hover. inherit will use the topbar > color > $mainColor;
+        margin-right: 40px;
       } 
+      .itemContainer{
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+      }
     }
   }
 }
