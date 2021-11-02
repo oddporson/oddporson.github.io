@@ -5,10 +5,10 @@
     width: 100%;
     height: calc(100vh - 70px);
     background-color: lightsalmon;
-    position: relative; 
-    top: 70px;
+    position: relative; // make the components relative to fill out the empty white space at the bottom
+    top: 70px; // starts at 70 px after the nav bar
 
-    > *{
+    > *{ // >* means for each element inside the components
       width: 100vw;
       height: calc(100vh - 70px);
     }
