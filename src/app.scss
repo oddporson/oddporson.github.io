@@ -7,5 +7,10 @@
     background-color: lightsalmon;
     position: relative; 
     top: 70px;
+
+    > *{
+      width: 100vw;
+      height: calc(100vh - 70px);
+    }
   }
 }
