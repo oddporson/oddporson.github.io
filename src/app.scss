@@ -7,6 +7,7 @@
     background-color: lightsalmon;
     position: relative; // make the components relative to fill out the empty white space at the bottom
     top: 70px; // starts at 70 px after the nav bar
+    scroll-behavior: smooth; // when you click ahref to navigate user to a component, it smoothly scroll to the certain content instead of "instantly" displaying the content
     scroll-snap-type: y mandatory;
     scrollbar-width: none; // for firefox
     &::-webkit-scrollbar{
