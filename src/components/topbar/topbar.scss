@@ -55,6 +55,26 @@
           width: 100%;
           height: 3px;
           background-color:$mainColor;
+          transform-origin: left;
+        }
+      }
+    }
+  }
+  &.active {
+    background-color:$mainColor;
+    color: white !important;
+    .hamburger {
+      span{
+        &:first-child {
+          background-color: white;
+          transform: rotate(45deg)
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          background-color: white;
+          transform: rotate(-45deg)
         }
       }
     }
