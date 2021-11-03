@@ -2,30 +2,58 @@
   background: whitesmoke;
   display: flex;
 
-    .left{
-      flex: 0.5;
-      // background-color:yellow;
+  .left{
+    flex: 0.5;
+    // background-color:yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .imgContainer{
+      width: 700px;
+      height: 700px;
+      overflow: hidden;
+      // background-color: crimson;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
       
-      .imgContainer{
-        width: 700px;
-        height: 700px;
-        overflow: hidden;
-        // background-color: crimson;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      img {
+        height: 100%;
         
-        img {
-          height: 100%;
-          
-        }
       }
     }
-    .right {
-      flex: 0.5;
-      background-color: red;
+  }
+  .right {
+    flex: 0.5;
+    position: relative;
+    // background-color: red;
+
+    .wrapper{
+      width: 100%;
+      height: 100%;
+      padding-left: 50px;
+      display:flex;
+      flex-direction:column;
+      justify-content: center;
     }
+    h1{
+      font-size: 60px;
+      margin: 10px 0;
+    }
+    h2{
+      font-size: 35px;
+    }
+    h3{
+      font-size: 30px;
+    }
+    a{
+      position: absolute;
+      bottom: 10px;
+      // left: 50%; moves arrow to the right side of the page.
+      img {
+        width: 30px;
+      }
+    }
+  }
 }
