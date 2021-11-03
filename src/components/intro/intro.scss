@@ -3,6 +3,12 @@
 .intro {
   background: whitesmoke;
   display: flex;
+  
+  .ityped-cursor {
+    animation: blink .7s infinite;
+    -webkit-animation: blink .7s infinite;
+    -moz-animation: blink .7s infinite;
+}
 
   .left{
     flex: 0.5;
@@ -69,5 +75,20 @@
         }
       }
     }
+  }
+  @keyframes blink {
+    100% {
+        opacity: 0;
+    }
+  }
+  @-webkit-keyframes blink {
+      100% {
+          opacity: 0;
+      }
+  }
+  @-moz-keyframes blink {
+      100% {
+          opacity: 0;
+      }
   }
 }

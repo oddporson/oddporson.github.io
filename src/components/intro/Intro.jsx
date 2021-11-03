@@ -7,8 +7,11 @@ export default function Intro() {
   useEffect(() => {
     // console.log(textRef);
     init(textRef.current, {
-      showCursor: false,
-      strings: ["Web Developer.", "Digital Marketer.", "Dancer."],
+      showCursor: true,
+      cursorChar: "|",
+      strings: ["Web Developer ", "Digital Marketer ", "Dancer "],
+      typeSpeed: 70,
+      backSpeed: 35,
     });
   }, []);
 
