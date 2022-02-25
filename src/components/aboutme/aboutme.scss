@@ -26,13 +26,24 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
+      @include mobile{
+        flex: 0.4;
+        width: 90%;
+        height: 100%;
+        // padding-top: 20px;
+        display: flex;
+        justify-content: center;
+      }
     }
 
-    h3 {
+    h2 {
       color: black;
 
       @include mobile {
-        color: green;
+        // color: green;
+        font-size: 14px;
+        overflow: hidden;
       }
     }
 
@@ -41,6 +52,12 @@
       padding: 20px;
       font-style: italic;
       font-size: 18px;
+
+      @include mobile{
+        // color: red;
+        padding: 5px;
+        font-size: 12px;
+      }
     }
   }
 
@@ -50,12 +67,24 @@
     align-items: center;
     justify-content: center;
     
+    @include mobile {
+      flex: 0.6;
+    }
     .imgContainer {
       width: 450px;
       height: 700px;
       overflow: hidden;
       // border: solid 5px green;
       border-radius: 15px;
+
+      @include mobile {
+        // border: 5px solid orange;
+        display: flex;
+        justify-content: center;
+        height: 320px;
+        width: 210px;
+        // padding-bottom: 20px;
+      }
 
       img {
         height: 100%;
