@@ -1,6 +1,13 @@
+@import "../../global.scss";
+
 .aboutme {
   background-color: whitesmoke;
   display: flex; 
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
 
   .left{
     flex: 0.7;
@@ -23,6 +30,10 @@
 
     h3 {
       color: black;
+
+      @include mobile {
+        color: green;
+      }
     }
 
     p {
