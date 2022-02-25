@@ -4,6 +4,13 @@
   background: whitesmoke;
   display: flex;
   
+  @include mobile {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .ityped-cursor {
     animation: blink .7s infinite;
     -webkit-animation: blink .7s infinite;
@@ -29,9 +36,21 @@
       
       img {
         height: 100%;
+
+        @include mobile {
+        height: 60%;
+        }
         
       }
+
+      @include mobile {
+      width: 450px;
+      height: 600px;
+      overflow: hidden;
+      border: 4px solid orange;
+      }
     }
+
   }
   .right {
     flex: 0.5;
@@ -45,6 +64,11 @@
       display:flex;
       flex-direction:column;
       justify-content: center;
+
+      @include mobile {
+        border: 2px solid red;
+        padding-top: 1px;
+      }
     }
     h1{
       font-size: 60px;
