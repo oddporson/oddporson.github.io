@@ -1,9 +1,11 @@
+import { Person, Mail } from "@material-ui/icons";
+
 import "./portfolio.scss";
 
 export default function Portfolio() {
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
+      <h1>Projects</h1>
       <ul>
         {/* <li className="active">Featured</li> */}
         {/* <li>Web App</li>
@@ -26,10 +28,18 @@ export default function Portfolio() {
           <img src="assets/Tweeter.png" alt="tweeter" />
           <h3>Tweeter</h3>
         </div>
-        {/* <div className="item">
-          <img src="assets/placefholder-img.png" alt="tiny app" />
-          <h3>Tiny App</h3>
-        </div> */}
+      </div>
+      <div className="footer">
+        <div className="itemContainer">
+          <img src="assets/github.png" alt="github" />
+          <a href="https://github.com/oddporson">
+            <span>oddporson</span>
+          </a>
+        </div>
+        <div className="itemContainer">
+          <Mail className="icon" />
+          <span>porsonlee@gmail.com</span>
+        </div>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import "./topbar.scss";
-import { Person, Mail } from "@material-ui/icons";
+import { Mail } from "@material-ui/icons";
 
 const Topbar = ({ menuOpen, setMenuOpen }) => {
   return (

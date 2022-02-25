@@ -1,9 +1,9 @@
 // Components
 import Topbar from "./components/topbar/Topbar";
-import Intro from "./components/intro/Intro";
-import Portfolio from "./components/portfolio/Portfolio";
-import AboutMe from "./components/aboutme/AboutMe";
 import Menu from "./components/menu/Menu";
+import Intro from "./components/intro/Intro";
+import AboutMe from "./components/aboutme/AboutMe";
+import Portfolio from "./components/portfolio/Portfolio";
 
 // scss
 import "./app.scss";
