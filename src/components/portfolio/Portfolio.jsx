@@ -26,10 +26,10 @@ export default function Portfolio() {
           <img src="assets/placseholder-img.png" alt="traveling app" />
           <h3>Travelling App</h3>
         </div>
-        <div className="item">
+        {/* <div className="item">
           <img src="assets/placefholder-img.png" alt="tiny app" />
           <h3>Tiny App</h3>
-        </div>
+        </div> */}
       </div>
     </div>
   );
