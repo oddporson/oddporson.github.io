@@ -12,7 +12,9 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
           <div className="itemContainer">
             {/* <Person className="icon" /> */}
             <img src="assets/github.png" alt="github" />
-            <span>oddporson</span>
+            <a href="https://github.com/oddporson">
+              <span>oddporson</span>
+            </a>
           </div>
           <div className="itemContainer">
             <Mail className="icon" />
