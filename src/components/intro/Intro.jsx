@@ -30,7 +30,7 @@ const Intro = () => {
             I'm a <span ref={textRef}></span>
           </h3>
         </div>
-        <a href="#portfolio">
+        <a href="#aboutme">
           <img src="assets/down-arrow.png" alt="arrow pointing down" />
         </a>
       </div>
