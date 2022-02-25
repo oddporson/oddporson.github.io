@@ -1,27 +1,54 @@
 .aboutme {
-  background-color: lightblue;
+  background-color: rgb(201, 236, 247);
   display: flex; 
 
   .left{
-    flex: 0.5;
+    flex: 0.7;
     position: relative;
+    // border: 2px solid red;
 
     .wrapper {
+      // background-color: blue;
+      // border: 3px solid black;
       width: 100%;
-      border: solid 2px solid black;
+      height: 100%;
+      padding-right: 50px;
+      // padding: 50px;
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h3 {
+      color: black;
+    }
+
+    p {
+      color: black;
+      padding: 20px;
+      font-style: italic;
+      font-size: 18px;
     }
   }
 
   .right {
-    flex: 0.5;
+    flex: 0.3;
     display: flex;
     align-items: center;
     justify-content: center;
     
     .imgContainer {
-      width: 700px;
+      width: 450px;
       height: 700px;
       overflow: hidden;
+      // border: solid 5px green;
+      border-radius: 15px;
+
+      img {
+        height: 100%;
+      }
     }
   }
 }

@@ -18,13 +18,14 @@
     justify-content: center;
     
     .imgContainer{
-      width: 700px;
+      width: 450px;
       height: 700px;
       overflow: hidden;
       // background-color: crimson;
       display: flex;
       flex-direction: column;
       align-items: center;
+      border-radius: 15px;
       
       img {
         height: 100%;

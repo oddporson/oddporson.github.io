@@ -5,16 +5,33 @@ const AboutMe = () => {
     <div className="aboutme" id="aboutme">
       <div className="left">
         <div className="wrapper">
-          <h3>
-            Spicy jalapeno bacon ipsum dolor amet short loin cupim bresaola
-            fatback landjaeger, cow sausage. Pork belly chicken leberkas sirloin
-            rump sausage salami ribeye shankle flank boudin meatball cow
-            alcatra. Pork chop bacon drumstick, ball tip pig spare ribs
-            landjaeger turkey pork belly buffalo strip steak boudin shoulder.
-            Ham shoulder turducken, shankle venison tenderloin ham hock buffalo
-            picanha pastrami meatloaf pork chop cupim bacon tail.
-          </h3>
-          <p>Quote here</p>
+          <h2>
+            Born in Hong Kong with a hard of hearing and raised in Vancouver,
+            BC, Canada. I'm a sales manager at a not-for-profit company,
+            Wavefront Centre for Communication Accessibility.
+          </h2>
+          <br />
+          <h2>
+            I helped lay the foundation for my store that sells communication
+            assistive devices for people with hearing loss. I've helped
+            streamline sales, marketing activities for the store and raise
+            awareness about the company.
+          </h2>
+          <br />
+          <h2>
+            I see myself as a long-time curious student and always looking for
+            new challenges. I'm passionate about programming and noticed that
+            there aren't a lot of available assistive apps for the Deaf and Hard
+            of Hearing individuals to communicate with society. I'm working
+            toward developing a live ASL translation.
+          </h2>
+          <br />
+          <p>
+            "I think that we're at our best when we support each other. Not when
+            we cancel each other for past mistakes, but when we help each other
+            grow, when we educate each other, when we guide each other towards
+            redemption. That is the best of humanity" - Joaquin Phoenix
+          </p>
         </div>
       </div>
       <div className="right">
