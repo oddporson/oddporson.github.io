@@ -7,7 +7,7 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
-            porsonLEE
+            pL
           </a>
           <div className="itemContainer">
             {/* <Person className="icon" /> */}
