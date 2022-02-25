@@ -1,0 +1,30 @@
+.aboutme {
+  background-color: lightblue;
+  display: flex; 
+
+  .left{
+    flex: 0.5;
+    position: relative;
+
+    .wrapper {
+      width: 100%;
+      border: solid 2px solid black;
+    }
+  }
+
+  .right {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .imgContainer {
+      width: 700px;
+      height: 700px;
+      overflow: hidden;
+    }
+  }
+}
+
+
+

@@ -1,7 +1,7 @@
 import "./topbar.scss";
 import { Person, Mail } from "@material-ui/icons";
 
-export default function Topbar({ menuOpen, setMenuOpen }) {
+const Topbar = ({ menuOpen, setMenuOpen }) => {
   return (
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
@@ -10,8 +10,9 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             porsonLee
           </a>
           <div className="itemContainer">
-            <Person className="icon" />
-            <span>123-456-7890</span>
+            {/* <Person className="icon" /> */}
+            <img src="assets/github.png" alt="github" />
+            <span>oddporson</span>
           </div>
           <div className="itemContainer">
             <Mail className="icon" />
@@ -28,4 +29,6 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
       </div>
     </div>
   );
-}
+};
+
+export default Topbar;

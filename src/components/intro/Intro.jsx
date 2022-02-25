@@ -2,14 +2,14 @@ import "./intro.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
 
-export default function Intro() {
+const Intro = () => {
   const textRef = useRef();
   useEffect(() => {
     // console.log(textRef);
     init(textRef.current, {
       showCursor: true,
       cursorChar: "|",
-      strings: ["Web Developer ", "Digital Marketer ", "Dancer "],
+      strings: ["Frontend Developer ", "Digital Marketer ", "Dancer "],
       typeSpeed: 70,
       backSpeed: 35,
     });
@@ -36,4 +36,6 @@ export default function Intro() {
       </div>
     </div>
   );
-}
+};
+
+export default Intro;
