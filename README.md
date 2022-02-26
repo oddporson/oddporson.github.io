@@ -1,3 +1,3 @@
 # Porson Lee
 
-Get Porsonal with me.
+Are you ready to get porsonal with me?
