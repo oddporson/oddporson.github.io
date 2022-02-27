@@ -1,4 +1,4 @@
-import { Person, Mail } from "@material-ui/icons";
+import { Mail } from "@material-ui/icons";
 
 import "./portfolio.scss";
 
