@@ -8,7 +8,8 @@
   align-items: center;
 
   @include mobile {
-    padding-top: 20px;
+    // padding-top: 20px;
+    // border: solid 1px green;
   }
 
   h1{
@@ -24,6 +25,10 @@
     justify-content: space-between;
     height: 400px;
 
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
     .left {
       flex: 0.5;
       display: flex;
@@ -32,9 +37,21 @@
       align-items: center;
       padding: 10px;
 
+      @include mobile {
+        // border: solid 2px red;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0;
+      }
+
       img {
         width: 660px;
         height: 300px;
+
+        @include mobile {
+          width: 300px;
+          height: 170px;
+        }
       }
     }
 
@@ -46,16 +63,25 @@
       align-items: center;
       padding: 10px;
 
+      @include mobile {
+        padding: 0;
+      }
       .title {
         display: flex;
         align-items: center;
         flex-direction: column;
           h1 {
             font-size: 30px;
+            @include mobile {
+              font-size: 12px;
+            }
           } 
           p {
             font-style: italic;
             padding: 5px 0 5px 0;
+            @include mobile { 
+              font-size: 8px;
+            }
           }
       }
 
@@ -68,17 +94,26 @@
 
         h2 {
           padding: 5px;
+          @include mobile {
+            font-size: 10px
+          }
         }
         p {
           font-size: 18px;
           font-style: italic;
           padding: 5px;
           font-weight: normal;
+          @include mobile {
+            font-size: 10px;
+          }
         }
         span {
           padding: 10px 0 0 0;
           font-weight: lighter;
           font-size: 18px;
+          @include mobile {
+            font-size: 10px;
+          }
         }
       } 
     }
@@ -93,8 +128,11 @@
 
     @include mobile {
       flex: 0.9;
-      width: 100%;
+      display: flex;
+      flex-direction: row;
+      // width: 100%;
       overflow: hidden;
+      // border: solid 2px orange;
     }
     .item {
       width: 250px;
@@ -111,8 +149,9 @@
       cursor: pointer;
 
       @include mobile {
-        width: 200px;
-        height: 130px;
+        // border: solid 3px green;
+        width: 120px;
+        height: 120px;
       }
       h3 {
         position: absolute;
