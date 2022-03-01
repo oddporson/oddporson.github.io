@@ -1,5 +1,6 @@
 import "./topbar.scss";
-import { Mail } from "@material-ui/icons";
+import { Mail, GitHub } from "@material-ui/icons";
+// import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Topbar = ({ menuOpen, setMenuOpen }) => {
   return (
@@ -11,7 +12,8 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
           </a>
           <div className="itemContainer">
             {/* <Person className="icon" /> */}
-            <img src="assets/github.png" alt="github" />
+            {/* <img src="assets/github.png" alt="github" /> */}
+            <GitHub className="icon" />
             <a href="https://github.com/oddporson">
               <span>oddporson</span>
             </a>
