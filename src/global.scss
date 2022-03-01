@@ -7,4 +7,17 @@ $width: 844px;
     @media (max-width: #{$width}){
         @content
     }
-}
+};
+
+@mixin tablet {
+    @media (max-width: 1024px) {
+        @content
+    }
+};
+
+@mixin desktop {
+    @media (max-width: 1600px) {
+        @content
+    }
+};
+
