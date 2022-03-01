@@ -3,37 +3,52 @@
 .aboutme {
   background-color: whitesmoke;
   display: flex; 
+  justify-content: space-evenly;
 
   @include mobile {
     display: flex;
     flex-direction: column;
+    // border: solid 2px red;
+    align-items: center;
   }
 
   .left{
-    flex: 0.7;
+    flex: 0.6;
     position: relative;
     // border: 2px solid red;
+    width: 600px;
+    padding: 0 10px 0 10px;
+
+    @include mobile {
+      display: flex;
+      justify-content: center;
+      // border: 2px solid red;
+      width: 100%;
+      height: 100%;
+    }
 
     .wrapper {
       // background-color: blue;
       // border: 3px solid black;
       width: 100%;
       height: 100%;
-      padding-right: 50px;
+      // padding-right: 10px;
       // padding: 50px;
-      padding-left: 20px;
+      // padding-left: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
 
+
       @include mobile{
-        flex: 0.4;
-        width: 90%;
+        // flex: 0.4;
+        width: 100%;
         height: 100%;
-        // padding-top: 20px;
         display: flex;
         justify-content: center;
+        padding: 0 10px 0 10px;
+        // overflow: hidden;
       }
     }
 
@@ -49,7 +64,7 @@
 
     p {
       color: black;
-      padding: 20px;
+      padding: 5px;
       font-style: italic;
       font-size: 18px;
 
@@ -66,6 +81,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 800px;
+    padding-left: 0;
     
     @include mobile {
       flex: 0.6;
