@@ -2,7 +2,7 @@ import { Mail } from "@material-ui/icons";
 
 import "./portfolio.scss";
 
-export default function Portfolio() {
+const Portfolio = () => {
   return (
     <div className="portfolio" id="portfolio">
       <h1>Projects</h1>
@@ -43,4 +43,6 @@ export default function Portfolio() {
       </div>
     </div>
   );
-}
+};
+
+export default Portfolio;
