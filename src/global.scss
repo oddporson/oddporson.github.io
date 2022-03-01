@@ -9,15 +9,10 @@ $width: 844px;
     }
 };
 
-@mixin tablet {
-    @media (max-width: 1024px) {
-        @content
-    }
-};
-
-@mixin desktop {
-    @media (max-width: 1600px) {
-        @content
-    }
-};
+// @mixin tablet {
+//     @media  (min-width: 845px) and 
+//             (max-width: 1024px) {
+//         @content
+//     }
+// };
 
