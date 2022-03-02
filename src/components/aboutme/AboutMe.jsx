@@ -23,7 +23,7 @@ const AboutMe = () => {
             new challenges. I'm passionate about programming and noticed that
             there aren't a lot of available assistive apps for the Deaf and Hard
             of Hearing individuals to communicate with society. I'm working
-            toward contributing to existing live ASL translation application.
+            toward contributing to an existing live ASL translation application.
           </h2>
           <br />
           <p>
