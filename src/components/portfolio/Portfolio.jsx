@@ -40,19 +40,27 @@ const Portfolio = () => {
       <div className="bottom">
         <div className="item">
           <img src="assets/Tripper.png" alt="traveling app" />
-          <h3>Travelling App</h3>
+          <a href="https://github.com/jayseo5953/keep-calm-and-travel-on">
+            <h3>Travel App</h3>
+          </a>
         </div>
         <div className="item">
           <img src="assets/LHL-Pizza.jpg" alt="pizza shop" />
-          <h3>Pizza Shop</h3>
+          <a href="https://github.com/Paahn/lhl-pizza-food-ordering">
+            <h3>Pizza Shop</h3>
+          </a>
         </div>
         <div className="item">
           <img src="assets/React-Scheduler.jpg" alt="react scheduler" />
-          <h3>React Scheduler</h3>
+          <a href="https://github.com/oddporson/react-scheduler">
+            <h3>React Scheduler</h3>
+          </a>
         </div>
         <div className="item">
           <img src="assets/Tweeter.png" alt="tweeter" />
-          <h3>Tweeter</h3>
+          <a href="https://github.com/oddporson/tweeter">
+            <h3>Tweeter</h3>
+          </a>
         </div>
       </div>
     </div>
