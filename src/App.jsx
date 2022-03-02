@@ -4,6 +4,7 @@ import Menu from "./components/menu/Menu";
 import Intro from "./components/intro/Intro";
 import AboutMe from "./components/aboutme/AboutMe";
 import Portfolio from "./components/portfolio/Portfolio";
+import Contact from "./components/contact/Contact";
 
 // scss
 import "./app.scss";
@@ -20,6 +21,7 @@ function App() {
         <Intro />
         <AboutMe />
         <Portfolio />
+        <Contact />
       </div>
     </div>
   );
