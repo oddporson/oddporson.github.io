@@ -19,11 +19,12 @@ const AboutMe = () => {
           </h2>
           <br />
           <h2>
-            I see myself as a long-time curious student and always looking for
-            new challenges. I'm passionate about programming and noticed that
-            there aren't a lot of available assistive apps for the Deaf and Hard
-            of Hearing individuals to communicate with society. I'm working
-            toward contributing to an existing live ASL translation application.
+            I see myself as an adaptable individual and a long-time curious
+            student always looking for new challenges. I'm passionate about
+            programming and noticed that there aren't a lot of available
+            assistive apps for the Deaf and Hard of Hearing individuals to
+            communicate with society. I'm working toward contributing to an
+            existing live ASL translation application.
           </h2>
           <br />
           <p>
