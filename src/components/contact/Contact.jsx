@@ -1,18 +1,32 @@
-import { Mail } from "@material-ui/icons";
+import { Mail, GitHub, LinkedIn } from "@material-ui/icons";
 import "./contact.scss";
 
 const Contact = () => {
   return (
-    <div className="footer">
-      <div className="itemContainer">
-        <img src="assets/github.png" alt="github" />
-        <a href="https://github.com/oddporson">
-          <span>oddporson</span>
-        </a>
+    <div className="contact" id="contact">
+      <div className="pun">
+        <h1>
+          Are you ready to get <span>porsonal</span> with me?
+        </h1>
+        <h2>Let's chat!</h2>
       </div>
-      <div className="itemContainer">
-        <Mail className="icon" />
-        <span>porsonlee@gmail.com</span>
+      <div className="container">
+        <div className="itemContainer">
+          <GitHub className="icon" />
+          <a href="https://github.com/oddporson">
+            <span>oddporson</span>
+          </a>
+        </div>
+        <div className="itemContainer">
+          <LinkedIn className="icon" />
+          <a href="https://www.linkedin.com/in/porsonlee/">
+            <span>porsonlee</span>
+          </a>
+        </div>
+        <div className="itemContainer">
+          <Mail className="icon" />
+          <span>porsonlee@gmail.com</span>
+        </div>
       </div>
     </div>
   );

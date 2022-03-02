@@ -1,4 +1,6 @@
-.footer {
+@import "../../global.scss";
+
+.contact {
   flex: 0.5;
   // background-color: pink;
   width: 100%;
@@ -8,17 +10,64 @@
   align-items: center;
 
   @include mobile {
-    flex: 0.1;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .pun {
+    display: flex;
+    flex-direction: column;
+
+    @include mobile {
+      padding: 0 10px 0 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // align-items: center
+      // border: solid 2px pink;
+    }
+    
+    h1 {
+      font-size: 35px;
+      // font-style: italic;
+      padding: 0 5px 0 5px;
+      // display: flex;
+      // justify-content: center;
+      // padding: 0 5px 0 5px;
+      // color: palevioletred;
+
+      span {
+        color: palevioletred;
+        font-style:italic;
+      }
+
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+    h2 {
+      font-weight: lighter;
+      padding: 40px 0 0 0;
+      font-size: 60px;
+      @include mobile {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+      }
+    }
   }
   .itemContainer {
     display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
     align-items: center;
+    // border: solid 2px orange;
+    padding: 20px 0 20px 0;
     
     span {
       font-size: 25px;
-
       @include mobile {
         font-size: 15px;
       }
@@ -27,10 +76,12 @@
     .icon {
       font-size: 35px;
       margin-right: 5px;
+      @include mobile {
+        font-size: 25px;
+      }
     }
 
     img {
-      // border: 4px solid red;
       width: 25px;
       height: 25px;
       margin-right: 5px;
@@ -38,8 +89,7 @@
 
     a {
       text-decoration: none;
-      color: inherit;
-      
+      color: inherit; 
     }
     a:visited {
       text-decoration: none;
@@ -47,7 +97,5 @@
     a:hover{
       color: rgb(26, 67, 155)
     }
-
-
   }
 }
