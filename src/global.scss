@@ -1,18 +1,49 @@
 // $mainColor: #15023a;
 $mainColor: #35536d;
 
-$width: 844px;
+// $width: 844px;
+$tinyphonewidth: 320px;
+$smallphonewidth: 480px;
+$tabletwidth: 768px;
+$smalldesktopwidth: 922px;
+$largedesktopwidth: 1200px;
 
-@mixin mobile {
-    @media (max-width: #{$width}){
+@mixin tinyphone {
+    @media (min-width: 50px) and (max-width: 320px) {
         @content
     }
 };
 
-// @mixin tablet {
-//     @media  (min-width: 845px) and 
-//             (max-width: 1024px) {
+@mixin mobile {
+    @media (min-width: 321px) and (max-width: 480px) {
+        @content
+    }
+};
+
+@mixin tablet {
+    @media (min-width: 481px) and (max-width: 768px) {
+        @content
+    }
+};
+
+@mixin smalldesktop {
+    @media (min-width: 769px) and (max-width: 1200px) {
+        @content
+}};
+
+@mixin largedesktop {
+    @media (min-width: 1201px) {
+        @content
+    }
+};
+
+
+
+
+// @mixin mobile {
+//     @media (max-width: #{$width}){
 //         @content
 //     }
 // };
+
 
