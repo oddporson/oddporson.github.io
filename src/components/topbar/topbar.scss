@@ -35,7 +35,13 @@
         align-items: center;
         margin-left: 30px;
 
+        @include splitscreen {
+          display: none;
+        }
         @include mobile {
+          display: none;
+        }
+        @include tablet {
           display: none;
         }
       
