@@ -8,36 +8,40 @@ $tabletwidth: 768px;
 $smalldesktopwidth: 922px;
 $largedesktopwidth: 1200px;
 
-@mixin tinyphone {
-    @media (min-width: 50px) and (max-width: 320px) {
+@mixin splitscreen {
+    @media (max-width: 319px) {
         @content
     }
 };
 
 @mixin mobile {
-    @media (min-width: 321px) and (max-width: 480px) {
-        @content
+    @media (min-width: 320px) and (max-width: 480px) {
+        @content;
     }
 };
 
 @mixin tablet {
     @media (min-width: 481px) and (max-width: 768px) {
-        @content
+        @content;
     }
 };
 
-@mixin smalldesktop {
-    @media (min-width: 769px) and (max-width: 1200px) {
-        @content
+@mixin laptop {
+    @media (min-width: 769px) and (max-width: 1024px) {
+        @content;
 }};
 
-@mixin largedesktop {
-    @media (min-width: 1201px) {
-        @content
+@mixin desktop {
+    @media (min-width: 1025px)and (max-width: 1200px) {
+        @content;
     }
 };
 
-
+@mixin tv {
+    @media (min-width: 1201px) {
+        @content;
+    }
+}
 
 
 // @mixin mobile {
