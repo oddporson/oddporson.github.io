@@ -29,9 +29,6 @@ const Intro = () => {
           <h3>
             I'm a <span ref={textRef}></span>
           </h3>
-          {/* <h4>
-            Are you ready to get <span>porsonal</span> with me?
-          </h4> */}
         </div>
         <a href="#aboutme">
           <img src="assets/down-arrow.png" alt="arrow pointing down" />
