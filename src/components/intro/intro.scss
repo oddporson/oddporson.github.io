@@ -5,7 +5,6 @@
   display: flex;
 
   @include splitscreen {
-    // background-color: purple;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -15,7 +14,6 @@
   }
   
   @include mobile {
-    // background-color: green;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -24,27 +22,13 @@
     padding-top: 10px;
   }
 
-  @include tablet {
-    // background-color: blue;
-  }
-
   @include laptop {
-    // background-color :red;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0;
     padding-left: 10px;
   }
-
-  @include desktop {
-    // background-color: yellow;
-  }
-
-  @include tv {
-    // background-color: pink;
-  }
-
 
   .ityped-cursor {
     animation: blink .7s infinite;
