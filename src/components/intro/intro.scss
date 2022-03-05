@@ -111,6 +111,9 @@
       height: 240px;
     }
 
+    @include tablet {
+      overflow: hidden;
+    }
     @include laptop {
       display: flex;
       justify-content: center;
