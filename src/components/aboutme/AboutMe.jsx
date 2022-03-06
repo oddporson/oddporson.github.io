@@ -10,14 +10,14 @@ const AboutMe = () => {
             BC, Canada. I'm a sales manager at a not-for-profit company,
             Wavefront Centre for Communication Accessibility.
           </h2>
-          <br />
+          {/* <br /> */}
           <h2>
             I helped lay the foundation for my store that sells communication
             assistive devices for people with hearing loss. I've helped
             streamline sales, marketing activities for the store and raise
             awareness about the company.
           </h2>
-          <br />
+          {/* <br /> */}
           <h2>
             I see myself as an adaptable individual and a long-time curious
             student always looking for new challenges. I'm passionate about
@@ -26,7 +26,7 @@ const AboutMe = () => {
             communicate with society. I'm working toward contributing to an
             existing live ASL translation application.
           </h2>
-          <br />
+          {/* <br /> */}
           <p>
             "I think that we're at our best when we support each other. Not when
             we cancel each other for past mistakes, but when we help each other
