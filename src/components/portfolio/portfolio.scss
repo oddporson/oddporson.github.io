@@ -25,6 +25,10 @@
   //   background-color:lightslategray
   // }
 
+  // @include tv {
+  //   background-color: blue;
+  // }
+
   h1{
     font-size: 40px;
     overflow: hidden;
@@ -272,8 +276,8 @@
     }
 
     .item {
-      width: 260px;
-      height: 260px;
+      width: 240px;
+      height: 240px;
       border-radius: 5px;
       border: 2px solid #35536d;
       margin: 10px 20px;
