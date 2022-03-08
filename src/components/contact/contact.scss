@@ -10,17 +10,17 @@
   align-items: center;
 
   @include splitscreen {
-    background-color: lightseagreen;
+    // background-color: lightseagreen;
   }
   @include mobile {
-    background-color: pink;
+    // background-color: pink;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
   }
   @include tablet {
-    background-color:cadetblue;
+    // background-color:cadetblue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,11 +28,11 @@
   }
 
   @include laptop {
-    background-color: coral;
+    // background-color: coral;
   }
 
   @include desktop {
-    background-color:lightslategray
+    // background-color:lightslategray
   }
 
   .pun {
