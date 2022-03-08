@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .contact {
-  flex: 0.5;
+  // flex: 0.5;
   background-color: whitesmoke;
   width: 100%;
   display: flex;
@@ -9,11 +9,30 @@
   justify-content: space-evenly;
   align-items: center;
 
+  @include splitscreen {
+    background-color: lightseagreen;
+  }
   @include mobile {
+    background-color: pink;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+  }
+  @include tablet {
+    background-color:cadetblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  @include laptop {
+    background-color: coral;
+  }
+
+  @include desktop {
+    background-color:lightslategray
   }
 
   .pun {
@@ -29,14 +48,12 @@
       // border: solid 2px pink;
     }
     
+    @include tablet {
+      padding: 0 10px 0 10px;
+    }
     h1 {
       font-size: 35px;
-      // font-style: italic;
       padding: 0 5px 0 5px;
-      // display: flex;
-      // justify-content: center;
-      // padding: 0 5px 0 5px;
-      // color: palevioletred;
 
       span {
         color: palevioletred;
@@ -46,6 +63,10 @@
       @include mobile {
         font-size: 20px;
       }
+
+      @include tablet {
+        font-size: 20px;
+      }
     }
     h2 {
       font-weight: lighter;
@@ -53,6 +74,11 @@
       font-size: 60px;
       @include mobile {
         font-size: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      @include tablet {
+        font-size: 30px;
         display: flex;
         justify-content: center;
       }
@@ -71,12 +97,18 @@
       @include mobile {
         font-size: 15px;
       }
+      @include tablet {
+        font-size: 20px;
+      }
     }
 
     .icon {
       font-size: 35px;
       margin-right: 5px;
       @include mobile {
+        font-size: 25px;
+      }
+      @include tablet {
         font-size: 25px;
       }
     }
