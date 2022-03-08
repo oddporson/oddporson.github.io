@@ -7,16 +7,54 @@
   justify-content: space-evenly;
   align-items: center;
 
+  @include splitscreen {
+    background-color:goldenrod;
+  }
   @include mobile {
-    // padding-top: 20px;
-    // border: solid 1px green;
+    background-color: pink;
+  }
+  @include tablet {
+    background-color:lightseagreen;
+  }
+
+  @include laptop {
+    background-color: coral;
+  }
+
+  @include desktop {
+    background-color:lightslategray
   }
 
   h1{
     font-size: 40px;
+    overflow: hidden;
 
+    @include splitscreen { 
+      font-size: 12px;
+      padding: 2px;
+      overflow: hidden;
+    }
     @include mobile {
-      font-size: 20px;
+      font-size: 15px;
+      padding: 2px;
+      overflow: hidden;
+    }
+
+    @include tablet {
+      font-size: 25px;
+      padding: 5px;
+      overflow: hidden;
+    }
+    @include laptop {
+      font-size: 35px;
+      padding: 2px; 
+      overflow: hidden;
+    }
+
+    @include desktop {
+      font-size: 35px;
+      padding: 2px;
+      overflow: hidden;
     }
   }
 
@@ -25,10 +63,19 @@
     justify-content: space-between;
     height: 400px;
 
+    @include splitscreen {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
     @include mobile {
       display: flex;
       flex-direction: column;
+      justify-content: space-evenly;
     }
+
+
     .left {
       flex: 0.5;
       display: flex;
@@ -36,8 +83,14 @@
       justify-content: space-evenly;
       align-items: center;
       padding: 10px;
+
+      @include splitscreen {
+        flex: none;
+      }
+
       @include mobile {
         // border: solid 2px red;
+        flex: none;
         display: flex;
         justify-content: space-evenly;
         padding: 0;
@@ -47,11 +100,29 @@
         width: 660px;
         height: 300px;
         border-radius: 5px;
-        // border: solid 2px #35536d;
+        border: solid 2px #35536d;
 
+        @include splitscreen { 
+          width: 180px;
+          height: 100px;
+        }
         @include mobile {
-          width: 300px;
-          height: 170px;
+          width: 230px;
+          height: 110px;
+        }
+
+        @include tablet {
+          width: 340px;
+          height: 200px;
+        }
+        @include laptop {
+          width: 380px;
+          height: 200px;
+        }
+
+        @include desktop {
+          width: 440px;
+          height: 220px;
         }
       }
     }
@@ -62,26 +133,58 @@
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-      padding: 10px;
+      padding: 8px;
+
+      @include splitscreen {
+        flex: none;
+      }
 
       @include mobile {
-        padding: 0;
+        flex: none;
       }
       .title {
         display: flex;
         align-items: center;
         flex-direction: column;
+
           h1 {
             font-size: 30px;
+
+            @include splitscreen{ 
+              font-size: 8px;
+            }
             @include mobile {
               font-size: 12px;
+            }
+
+            @include tablet {
+              font-size: 20px;
+            }
+
+            @include laptop {
+              font-size: 20px;
+            }
+
+            @include desktop {
+              font-size: 25px;
             }
           } 
           p {
             font-style: italic;
             padding: 5px 0 5px 0;
+            @include splitscreen {
+              font-size: 6px;
+            }
             @include mobile { 
               font-size: 8px;
+            }
+
+            @include tablet {
+              overflow: hidden;
+            }
+
+            @include desktop {
+              overflow: hidden;
             }
           }
       }
@@ -93,10 +196,29 @@
         align-items: center;
         padding: 0 5px 0 5px;
 
+
         h2 {
           padding: 5px;
+          @include splitscreen {
+            font-size: 8px;
+          }
           @include mobile {
-            font-size: 10px
+            font-size: 10px;
+            padding: 0;
+          }
+
+          @include tablet {
+            font-size: 12px;
+            overflow: hidden;
+          }
+          @include laptop {
+            font-size: 16px;
+            overflow: hidden;
+          }
+
+          @include desktop {
+            font-size: 18px;
+            overflow: hidden;
           }
         }
         p {
@@ -104,16 +226,23 @@
           font-style: italic;
           padding: 5px;
           font-weight: normal;
-          @include mobile {
-            font-size: 10px;
+          @include splitscreen { 
+            font-size: 8px;
           }
-        }
-        span {
-          padding: 10px 0 0 0;
-          font-weight: lighter;
-          font-size: 18px;
           @include mobile {
             font-size: 10px;
+            padding: 1px;
+          }
+          @include tablet {
+            font-size: 12px;
+            padding: 5px;
+            overflow: hidden;
+          }
+
+          @include laptop {
+            font-size: 16px;
+            padding: 5px;
+            overflow: hidden;
           }
         }
       } 
@@ -127,19 +256,26 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 
-    @include mobile {
-      flex: 0.9;
-      display: flex;
-      flex-direction: row;
-      // width: 100%;
-      overflow: hidden;
-      // border: solid 2px orange;
+    @include splitscreen { 
+      height: 300px;
     }
+    @include mobile {
+      height: 350px;
+    }
+
+    @include tablet {
+      height: 400px;
+    }
+
+    @include desktop {
+      height: 300px;
+    }
+
     .item {
       width: 260px;
       height: 260px;
       border-radius: 5px;
-      // border: 2px solid #35536d;
+      border: 2px solid #35536d;
       margin: 10px 20px;
       display: flex;
       flex-direction: column;
@@ -149,22 +285,55 @@
       // position: relative;
       // transition: all 0.5s ease;
 
-      @include mobile {
-        // border: solid 3px green;
-        width: 120px;
-        height: 120px;
+      @include splitscreen { 
+        width: 60px;
+        height: 60px;
       }
+
+      @include mobile {
+        width: 90px;
+        height: 90px;
+      }
+
+      @include tablet {
+        width: 100px;
+        height: 100px;
+      }
+
+      @include laptop {
+        width: 150px;
+        height: 150px;
+      }
+
+      @include desktop {
+        width: 200px;
+        height: 200px;
+      }
+
       h3 {
-        // position: absolute;
+        position: absolute;
+        transform: translate(-40px);
         padding: 5px 0 5px 0;
         display: flex;
         justify-content: center;
+        align-items: center;
         font-size: 20px;
         cursor: pointer;
 
-        @include mobile {
-          font-size: 10px;
+        @include splitscreen {
+          font-size: 8px;
         }
+        @include mobile {
+          font-size: 12px;
+        }
+
+        @include tablet {
+          font-size: 14px;
+        }
+
+        @include desktop {
+          font-size: 16px;
+        };
       }
       img {
         width: 100%;

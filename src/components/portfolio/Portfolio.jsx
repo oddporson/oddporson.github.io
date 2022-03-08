@@ -30,9 +30,9 @@ const Portfolio = () => {
               than anything we could have imagined. Friendly, prompt, and
               accurate, Porson gets the job done, and is easy to contact
               whenever adjustments are needed. We highly recommend his
-              services!"
+              services!" - Crystal Lynn Guay (Duke's Fine Ice Cream Owner)
             </p>
-            <span>- Crystal Lynn Guay (Duke's Fine Ice Cream Owner)</span>
+            {/* <span>- Crystal Lynn Guay (Duke's Fine Ice Cream Owner)</span> */}
           </div>
         </div>
       </div>
@@ -53,7 +53,7 @@ const Portfolio = () => {
         <div className="item">
           <img src="assets/React-Scheduler.jpg" alt="react scheduler" />
           <a href="https://github.com/oddporson/react-scheduler">
-            <h3>React Scheduler</h3>
+            <h3>Scheduler</h3>
           </a>
         </div>
         <div className="item">
