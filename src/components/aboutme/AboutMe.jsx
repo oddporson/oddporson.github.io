@@ -37,7 +37,7 @@ const AboutMe = () => {
       </div>
       <div className="right">
         <div className="imgContainer">
-          <img src="assets/porson.png" alt="porson's posing with nasa" />
+          <img src="assets/porson.jpg" alt="porson's posing with nasa" />
         </div>
       </div>
     </div>

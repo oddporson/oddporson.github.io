@@ -19,7 +19,7 @@ const Intro = () => {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/airbaby.png" alt="bboy move" />
+          <img src="assets/airbaby.jpg" alt="bboy move" />
         </div>
       </div>
       <div className="right">
