@@ -137,7 +137,7 @@
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-      padding: 8px;
+      padding: 8px 90px 8px 8px;
 
       @include splitscreen {
         flex: none;
