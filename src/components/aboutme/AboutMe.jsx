@@ -6,9 +6,10 @@ const AboutMe = () => {
       <div className="left">
         <div className="wrapper">
           <h2>
-            Born in Hong Kong with a hard of hearing and raised in Vancouver,
-            BC, Canada. I'm a sales manager at a not-for-profit company,
-            Wavefront Centre for Communication Accessibility.
+            I was born with hard of hearing in Hong Kong and raised in
+            Vancouver, BC, Canada. I'm a self-employed web developer and work as
+            a sales manager at a non-profit agency, Wavefront Centre for
+            Communication Accessibility.
           </h2>
           {/* <br /> */}
           <h2>
@@ -19,10 +20,10 @@ const AboutMe = () => {
           </h2>
           {/* <br /> */}
           <h2>
-            I see myself as an adaptable individual and a long-time curious
-            student always looking for new challenges. I'm passionate about
+            I see myself as a curious, adaptable student always looking for new
+            challenges and striving for improvement. I'm passionate about
             programming and noticed that there aren't a lot of available
-            assistive apps for the Deaf and Hard of Hearing individuals to
+            assistive apps for the Deaf and Hard of Hearing communities
             communicate with society. I'm working toward contributing to an
             existing live ASL translation application.
           </h2>
