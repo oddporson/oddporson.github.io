@@ -39,27 +39,27 @@ const Portfolio = () => {
       <h1>Projects</h1>
       <div className="bottom">
         <div className="item">
-          <img src="assets/Tripper.png" alt="traveling app" />
           <a href="https://github.com/jayseo5953/keep-calm-and-travel-on">
-            <h3>Travel App</h3>
+            <img src="assets/Tripper.png" alt="traveling app" />
+            {/* <h3>Travel App</h3> */}
           </a>
         </div>
         <div className="item">
-          <img src="assets/LHL-Pizza.jpg" alt="pizza shop" />
           <a href="https://github.com/Paahn/lhl-pizza-food-ordering">
-            <h3>Pizza Shop</h3>
+            <img src="assets/LHL-Pizza.jpg" alt="pizza shop" />
+            {/* <h3>Pizza Shop</h3> */}
           </a>
         </div>
         <div className="item">
-          <img src="assets/React-Scheduler.jpg" alt="react scheduler" />
           <a href="https://github.com/oddporson/react-scheduler">
-            <h3>Scheduler</h3>
+            <img src="assets/React-Scheduler.jpg" alt="react scheduler" />
+            {/* <h3>Scheduler</h3> */}
           </a>
         </div>
         <div className="item">
-          <img src="assets/Tweeter.png" alt="tweeter" />
           <a href="https://github.com/oddporson/tweeter">
-            <h3>Tweeter</h3>
+            <img src="assets/Tweeter.png" alt="tweeter" />
+            {/* <h3>Tweeter</h3> */}
           </a>
         </div>
       </div>
